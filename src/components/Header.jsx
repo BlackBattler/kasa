@@ -1,17 +1,15 @@
-import { Link } from "react-router-dom";
-import "../styles/Header.css";
+import "../styles/header.scss";
 import LogoHeader from "../assets/logo-header.png";
+import Nav from "./Nav";
 
+//Simple header function
 export default function Header() {
-      return (
-            <header className="header">
-                  <div className="header_logo">
-                        <img src={LogoHeader} alt="Logo Kasa" />
-                  </div>
-                  <nav className="header_nav">
-                        <Link to="/">Accueil</Link>
-                        <Link to="/about">A Propos</Link>
-                  </nav>
-            </header>
-      );
+  return (
+    <header className="header">
+      <div>
+        <img src={LogoHeader} alt="Logo Kasa" />
+      </div>
+      <Nav />
+    </header>
+  );
 }

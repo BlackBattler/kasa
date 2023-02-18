@@ -1,0 +1,35 @@
+@import "../sass/main.scss";
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/home_banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 223px;
+  margin: 20px auto;
+  max-width: 95%;
+  padding: 20px;
+  @media screen and (max-width: 426px) {
+    border-radius: 10px;
+    height: 111px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+
+    @media screen and (max-width: 900px) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 24px;
+    }
+  }
+}

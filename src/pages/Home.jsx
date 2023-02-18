@@ -1,9 +1,13 @@
-function Home() {
+import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
+
+export default function Home() {
   return (
     <div>
-      <h1>Hello world!</h1>
+      <Header />
+      <Banner />
+      <Footer />
     </div>
   );
 }
-
-export default Home;
