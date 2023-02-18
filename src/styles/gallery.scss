@@ -1,0 +1,22 @@
+@import "../sass/main.scss";
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color: $color-secondary;
+  gap: 50px;
+  padding: 50px;
+  margin: 0 auto;
+  @media screen and (max-width: 1025px) {
+    gap: 25px;
+    padding: 25px 15px;
+  }
+
+  @media screen and (max-width: 426px) {
+    background-color: #fff;
+    padding-top: 0;
+  }
+}

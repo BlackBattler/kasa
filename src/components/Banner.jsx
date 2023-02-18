@@ -11,7 +11,7 @@ export default function Banner() {
     if (location.pathname === "/") {
       setHomePage(true);
     }
-  }, []);
+  }, [location.pathname]);
 
   return (
     <section className={homePage ? "banner" : "banner_about"}>

@@ -8,8 +8,14 @@
     font-size: 24px;
     &_page {
       &-active {
-        transition: all 0.2s ease-in-out;
         text-decoration: underline solid $color-primary;
+      }
+    }
+
+    li {
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
       }
     }
 

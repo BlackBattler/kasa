@@ -6,9 +6,9 @@ import Nav from "./Nav";
 export default function Header() {
   return (
     <header className="header">
-      <div>
+      <h1>
         <img src={LogoHeader} alt="Logo Kasa" />
-      </div>
+      </h1>
       <Nav />
     </header>
   );
