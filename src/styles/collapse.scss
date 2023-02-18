@@ -1,0 +1,51 @@
+@import "../sass/main.scss";
+
+.collapse {
+  background-color: $color-secondary;
+  &_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 1px 3px rgb(0, 0, 0);
+    }
+    @media screen and (max-width: 426px) {
+      font-size: 13px;
+    }
+
+    .arrow {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .arrow_up {
+      transform: rotate(0deg);
+    }
+    .arrow_down {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_content {
+    display: flex;
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 20px 10px 10px;
+    @media screen and (max-width: 426px) {
+      font-size: 12px;
+    }
+
+    &-hidden {
+      visibility: hidden;
+      height: 0;
+    }
+  }
+}

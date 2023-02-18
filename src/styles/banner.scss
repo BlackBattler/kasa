@@ -11,12 +11,30 @@
   background-position: center;
   background-size: cover;
   height: 223px;
-  margin: 20px auto;
+  margin: 40px 30px;
   max-width: 95%;
   padding: 20px;
   @media screen and (max-width: 426px) {
     border-radius: 10px;
     height: 111px;
+  }
+
+  &_about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/about_banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 223px;
+    margin: 40px 30px;
+    max-width: 95%;
+    @media screen and (max-width: 426px) {
+      border-radius: 10px;
+    }
   }
 
   p {

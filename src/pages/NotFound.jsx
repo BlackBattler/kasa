@@ -2,6 +2,7 @@ import "../styles/notFound.scss";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 
+//Error page
 export default function NotFound() {
   return (
     <div>
