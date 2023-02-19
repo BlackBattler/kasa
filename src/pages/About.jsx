@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 //About Page
 export default function About() {
   return (
-    <div>
+    <div className="aboutPage">
       <Header />
       <Banner />
       <div className="about">

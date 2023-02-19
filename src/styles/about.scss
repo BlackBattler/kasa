@@ -1,7 +1,7 @@
 @import "../sass/main.scss";
 
 .about {
-  padding: 20px 0 300px;
+  padding: 20px 0;
   width: 80%;
   margin: 0 auto;
   @media screen and (max-width: 426px) {
@@ -11,4 +11,10 @@
   &_collapse {
     margin: 20px auto;
   }
+}
+
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
