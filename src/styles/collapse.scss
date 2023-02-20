@@ -35,10 +35,13 @@
 
   &_content {
     display: flex;
+    flex-direction: column;
     color: $color-primary;
     font-weight: 400;
     font-size: 24px;
     padding: 20px 10px 10px;
+    opacity: 1;
+    transition: 200ms opacity ease-in-out;
     @media screen and (max-width: 426px) {
       font-size: 12px;
     }
@@ -46,6 +49,8 @@
     &-hidden {
       visibility: hidden;
       height: 0;
+      opacity: 0;
+      transition: 200ms opacity ease-in-out;
     }
   }
 }

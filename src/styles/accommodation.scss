@@ -1,0 +1,22 @@
+@import "../sass/main.scss";
+
+.accommodation {
+  margin: 0 auto;
+
+  &_collapse {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 30px auto;
+    width: 95%;
+    &_item {
+      width: 50%;
+    }
+  }
+}
+
+.accommodationPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

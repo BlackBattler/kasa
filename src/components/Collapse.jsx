@@ -3,7 +3,7 @@ import arrow from "../assets/collapse-arrow.png";
 import { useState } from "react";
 
 export default function Collapse({ title, content }) {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   return (
     <div className="collapse">

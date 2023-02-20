@@ -2,6 +2,7 @@ import "../styles/gallery.scss";
 import dataList from "../datas/appartmentsList";
 import Thumb from "./Thumb";
 
+// Display appartments
 export default function Gallery() {
   return (
     <main className="gallery">

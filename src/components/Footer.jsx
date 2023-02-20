@@ -1,7 +1,7 @@
 import "../styles/footer.scss";
 import LogoFooter from "../assets/logo-footer.png";
 
-//Simple footer function
+// Simple footer function
 export default function Footer() {
   return (
     <footer className="footer">

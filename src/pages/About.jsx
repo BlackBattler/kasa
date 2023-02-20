@@ -11,13 +11,13 @@ export default function About() {
     <div className="aboutPage">
       <Header />
       <Banner />
-      <div className="about">
+      <main className="about">
         {aboutData.map((data) => (
           <div className="about_collapse" key={data.id}>
             <Collapse title={data.title} content={data.content} />
           </div>
         ))}
-      </div>
+      </main>
       <Footer />
     </div>
   );

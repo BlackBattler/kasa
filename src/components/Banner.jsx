@@ -2,11 +2,12 @@ import "../styles/banner.scss";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-//Banner change depend if user on 'HOME' page or 'ABOUT' page
+// Banner change depend if user on 'HOME' page or 'ABOUT' page
 export default function Banner() {
   const [homePage, setHomePage] = useState(false);
   const location = useLocation();
 
+  // Get correct path location for proper banner image
   useEffect(() => {
     if (location.pathname === "/") {
       setHomePage(true);

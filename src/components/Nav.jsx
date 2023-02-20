@@ -1,9 +1,9 @@
 import "../styles/nav.scss";
 import { Link } from "react-router-dom";
 
-//Nav use for header
+// Navbar for header
 export default function Nav() {
-  //get current location pathname for underline effect
+  // Get current location pathname for underline effect
   const currentRoute = window.location.pathname;
 
   return (
