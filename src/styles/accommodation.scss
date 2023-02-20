@@ -3,6 +3,40 @@
 .accommodation {
   margin: 0 auto;
 
+  &_content {
+    &_information {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &_title {
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  &_location {
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &_tag {
+    display: flex;
+    gap: 10px;
+    &_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: $color-primary;
+      width: 115px;
+      height: 25px;
+      border-radius: 10px;
+    }
+  }
+
   &_collapse {
     display: flex;
     justify-content: space-between;

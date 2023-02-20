@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 
-//About Page
+// About Page
 export default function About() {
   return (
     <div className="aboutPage">
