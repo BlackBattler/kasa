@@ -4,6 +4,11 @@
   margin: 0 auto;
 
   &_content {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+
     &_information {
       display: flex;
       flex-direction: column;
@@ -14,12 +19,14 @@
     color: $color-primary;
     font-weight: 500;
     font-size: 36px;
+    margin-bottom: 10px;
   }
 
   &_location {
     color: $color-primary;
     font-weight: 500;
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
   &_tag {
@@ -34,6 +41,36 @@
       width: 115px;
       height: 25px;
       border-radius: 10px;
+    }
+  }
+
+  &_host {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 0 10px;
+
+      img {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &_name {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      font-weight: 500;
+      font-size: 18px;
+      color: $color-primary;
     }
   }
 
