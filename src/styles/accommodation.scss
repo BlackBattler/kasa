@@ -38,7 +38,7 @@
       align-items: center;
       color: #fff;
       background-color: $color-primary;
-      width: 115px;
+      padding: 0 15px;
       height: 25px;
       border-radius: 10px;
     }
@@ -54,14 +54,14 @@
       justify-content: flex-end;
       align-items: flex-end;
       gap: 0 10px;
+    }
 
-      img {
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: center;
-      }
+    &_picture {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
     }
 
     &_name {
@@ -71,6 +71,14 @@
       font-weight: 500;
       font-size: 18px;
       color: $color-primary;
+    }
+  }
+
+  &_rating {
+    margin: 10px;
+    &_star {
+      height: 30px;
+      width: 30px;
     }
   }
 

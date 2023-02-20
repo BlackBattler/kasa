@@ -5,6 +5,8 @@ import dataList from "../datas/appartmentsList";
 import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
+import starRed from "../assets/star-red.png";
+import starGrey from "../assets/star-grey.png";
 import Footer from "../components/Footer";
 
 // Accommodation page
@@ -67,11 +69,27 @@ export default function Accommodation() {
               </div>
 
               {/* Host picture */}
-              <img src={hostImage} alt="host" />
+              <img
+                className="accommodation_host_picture"
+                src={hostImage}
+                alt="host"
+              />
             </div>
 
             {/* Star ratings */}
-            <div className="accommodation_rating"></div>
+            <div className="accommodation_rating">
+              {[...Array(5)].map((_star, index) => {
+                const ratingValue = index + 1;
+                return (
+                  <img
+                    className="accommodation_rating_star"
+                    key={index}
+                    src={ratingValue <= rating ? starRed : starGrey}
+                    alt="accommodation rating"
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
 
