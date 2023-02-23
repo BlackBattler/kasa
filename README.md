@@ -10,4 +10,4 @@
 
 Démarrer le serveur avec la commande `npm start`
 
-[http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lien : [http://localhost:3000](http://localhost:3000).
