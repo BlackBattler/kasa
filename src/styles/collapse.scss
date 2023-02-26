@@ -18,6 +18,9 @@
 
     .arrow {
       transition: all 0.2s ease-in-out;
+      @media screen and (max-width: 426px) {
+        height: 10px;
+      }
     }
 
     .arrow_up {
