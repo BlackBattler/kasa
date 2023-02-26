@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import dataList from "../datas/appartmentsList";
 import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
+import Tag from "../components/Tag";
 import Collapse from "../components/Collapse";
 import starRed from "../assets/star-red.png";
 import starGrey from "../assets/star-grey.png";
@@ -41,7 +42,9 @@ export default function Accommodation() {
     return (
       <div className="accommodationPage">
         <Header />
-        <Carrousel imageSlider={getAppartmentID[0].pictures} />
+        <div>
+          <Carrousel imageSlider={getAppartmentID[0].pictures} />
+        </div>
         <main className="accommodation">
           <div className="accommodation_content">
             {/* Title, location, tags */}
@@ -53,9 +56,7 @@ export default function Accommodation() {
               {/* Tags */}
               <div className="accommodation_tag">
                 {accommodationTag.map((tag, index) => (
-                  <p className="accommodation_tag_content" key={index}>
-                    {tag}
-                  </p>
+                  <Tag tag={tag} key={index} />
                 ))}
               </div>
             </div>

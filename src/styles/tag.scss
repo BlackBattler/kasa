@@ -1,0 +1,20 @@
+@import "../sass/main.scss";
+
+.tag {
+  display: flex;
+  gap: 10px;
+  &_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: $color-primary;
+    padding: 0 15px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    @media screen and (max-width: 426px) {
+      font-size: 10px;
+    }
+  }
+}

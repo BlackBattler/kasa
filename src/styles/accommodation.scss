@@ -2,12 +2,20 @@
 
 .accommodation {
   margin: 0 auto;
+  @media screen and (max-width: 769px) {
+    margin: 0 20px;
+  }
 
   &_content {
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
+
     @media screen and (max-width: 426px) {
       flex-direction: column;
     }
@@ -41,20 +49,6 @@
   &_tag {
     display: flex;
     gap: 10px;
-    &_content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      background-color: $color-primary;
-      padding: 0 15px;
-      height: 25px;
-      border-radius: 10px;
-      font-size: 14px;
-      @media screen and (max-width: 426px) {
-        font-size: 10px;
-      }
-    }
   }
 
   &_host {
@@ -127,6 +121,7 @@
     @media screen and (max-width: 769px) {
       flex-direction: column;
       gap: 25px;
+      width: 100%;
       &_item {
         width: 100%;
       }

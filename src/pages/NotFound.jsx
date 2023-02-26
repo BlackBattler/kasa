@@ -1,11 +1,12 @@
 import "../styles/notFound.scss";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 //Error page
 export default function NotFound() {
   return (
-    <div>
+    <div className="errorPage">
       <Header />
       <main className="notFound">
         <p className="notFound_error">404</p>
@@ -16,6 +17,7 @@ export default function NotFound() {
           Retourner sur la page d'accueil
         </Link>
       </main>
+      <Footer />
     </div>
   );
 }
